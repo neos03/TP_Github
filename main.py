@@ -7,6 +7,7 @@ iris = pd.read_csv("InputData/Iris.csv") #load the dataset
 test_size = 0.3 # the attribute test_size=0.3 to use for splitting the data 
 				#into 80% for train and 30% for test
 
+
 train, test =preprocess_data(iris, test_size)
 # training data features
 train_X = train[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
